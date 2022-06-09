@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
+	<ATPP_AndroidTXKind.label>TX Android Colonist</ATPP_AndroidTXKind.label>
+	<ATPP_AndroidTXKind.labelPlural>TX Android Colonists</ATPP_AndroidTXKind.labelPlural>
+	
 	<ATPP_Android2TXKind.label>TX2 Android Colonist</ATPP_Android2TXKind.label>
 	<ATPP_Android2TXKind.labelPlural>TX2 Android Colonists</ATPP_Android2TXKind.labelPlural>
 	
