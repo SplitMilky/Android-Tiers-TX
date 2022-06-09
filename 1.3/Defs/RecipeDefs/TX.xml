@@ -39,5 +39,13 @@
 			<li>AndroidProductionVat</li>
 	      	</recipeUsers>
 	</RecipeDef>
+	
+		<RecipeDef ParentName="ATPP_BaseCreateTX">
+		<defName>ATPP_CreateTX2Android</defName>
+		<label>Create TX male Android</label>
+		<products>
+			<ATPP_TXAndroidGeneratorAI>1</ATPP_TXAndroidGeneratorAI>
+		</products>
+	</RecipeDef>
 
 </Defs>
