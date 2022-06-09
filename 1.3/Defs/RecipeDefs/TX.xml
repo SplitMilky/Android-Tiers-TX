@@ -69,5 +69,17 @@
 		</comps>
 	</ThingDef>
 	
+	<ThingDef ParentName="ATPP_GeneratorAI">
+		<defName>ATPP_TXAndroidGeneratorAI</defName>
+		<label>TX female Android</label>
+		<comps>
+			<li Class="MOARANDROIDS.SpawnerCompProperties_GenericSpawner">
+				<compClass>MOARANDROIDS.CompAndroidSpawnerGeneric</compClass>
+				<Pawnkind>ATPP_AndroidTXKind</Pawnkind>
+				<gender>1</gender>
+			</li>
+		</comps>
+	</ThingDef>
+	
 
 </Defs>
