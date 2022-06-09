@@ -45,7 +45,7 @@
 		<defName>ATPP_CreateTXAndroid</defName>
 		<label>Create TX male Android</label>
 		<products>
-			<ATPP_TXAndroidGeneratorAI>1</ATPP_TXAndroidGeneratorAI>
+			<ATPP_TXMaleAndroidGeneratorAI>1</ATPP_TXMaleAndroidGeneratorAI>
 		</products>
 	</RecipeDef>
 	
@@ -58,7 +58,7 @@
 	</RecipeDef>
 	
 	<ThingDef ParentName="ATPP_GeneratorAI">
-		<defName>ATPP_TXAndroidGeneratorAI</defName>
+		<defName>ATPP_TXMaleAndroidGeneratorAI</defName>
 		<label>TX male Android</label>
 		<comps>
 			<li Class="MOARANDROIDS.SpawnerCompProperties_GenericSpawner">
@@ -70,7 +70,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ATPP_GeneratorAI">
-		<defName>ATPP_TXAndroidGeneratorAI</defName>
+		<defName>ATPP_TXFemaleAndroidGeneratorAI</defName>
 		<label>TX female Android</label>
 		<comps>
 			<li Class="MOARANDROIDS.SpawnerCompProperties_GenericSpawner">
