@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef Abstract="true" Name="ATPP_BaseCreateTX2">
-      		<description>Create a blank TX2 Android from Plasteel.</description>
+	<RecipeDef Abstract="true" Name="ATPP_BaseCreateTX">
+      		<description>Create a blank TX Android from Plasteel.</description>
       			<jobString>Making Android</jobString>  
       			<allowMixingIngredients>false</allowMixingIngredients>
 	  		<skillRequirements>
