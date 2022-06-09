@@ -38,14 +38,28 @@
 	 	<recipeUsers>
 			<li>AndroidProductionVat</li>
 	      	</recipeUsers>
+	
+	<ThingDef ParentName="ATPP_GeneratorAI">
+		<defName>ATPP_TXAndroidGeneratorAI</defName>
+		<label>TX male Android</label>
+		<comps>
+			<li Class="MOARANDROIDS.SpawnerCompProperties_GenericSpawner">
+				<compClass>MOARANDROIDS.CompAndroidSpawnerGeneric</compClass>
+				<Pawnkind>ATPP_AndroidTXKind</Pawnkind>
+				<gender>0</gender>
+			</li>
+		</comps>
+	</ThingDef>
+		
 	</RecipeDef>
 	
 		<RecipeDef ParentName="ATPP_BaseCreateTX">
-		<defName>ATPP_CreateTX2Android</defName>
+		<defName>ATPP_CreateTXAndroid</defName>
 		<label>Create TX male Android</label>
 		<products>
 			<ATPP_TXAndroidGeneratorAI>1</ATPP_TXAndroidGeneratorAI>
 		</products>
 	</RecipeDef>
+	
 
 </Defs>
