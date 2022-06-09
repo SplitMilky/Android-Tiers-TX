@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Android tiers - TX</name>
-  <author>aRandomKiwi, CrackaJack, MadHaTr</author>
+  <author>MadHaTr, aRandomKiwi, CrackaJack</author>
   <supportedVersions>
 	<li>1.1</li>
 	<li>1.2</li>
@@ -14,7 +14,7 @@
 		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1918589742</steamWorkshopUrl>
 	</li>
   </modDependencies>
-  <packageId>aRandomKiwi.AndroidTiersTXSerie</packageId>
+  <packageId>MadHaTr.AndroidTiersTX</packageId>
   <description><![CDATA[  
 Experimental T series androids.
 
