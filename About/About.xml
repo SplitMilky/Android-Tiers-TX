@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Android tiers - TX Series</name>
-  <author>aRandomKiwi, CrackaJack</author>
+  <name>Android tiers - TX</name>
+  <author>aRandomKiwi, CrackaJack, MadHaTr</author>
   <supportedVersions>
 	<li>1.1</li>
 	<li>1.2</li>
@@ -16,7 +16,7 @@
   </modDependencies>
   <packageId>aRandomKiwi.AndroidTiersTXSerie</packageId>
   <description><![CDATA[  
-Add a new serie of androids designed for infiltration missions, their slightly modified exoskeleton are covered with rubber skin / living tissues which prevent them to rust, have a better social impact and to be EMP/solar flare proof, he is however more flammable.
+Experimental T series androids.
 
 Version <color=#FFD800>1.0.4</color>
 	]]>
