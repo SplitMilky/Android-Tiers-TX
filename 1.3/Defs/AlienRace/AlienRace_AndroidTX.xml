@@ -1,39 +1,45 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-
-		<defName>ATPP_AndroidTX</defName>
+		<!-- The folowing <defName> needs to be the same/associated with race
+		 in <PawnKindDef> -->
+		<defName>AndroidTX</defName>
 		<label>TX Android</label>
 		<description>A combat oriented experimental modification to the Tier 1 android.</description>
 		<alienRace>
-
 			<raceRestriction>
 				<traitList>
+					<li>SimpleMindedAndroid</li>
 					<li>FeelingsTowardHumanity</li>
 				</traitList>
 			</raceRestriction>
-
 			<generalSettings>
-				<maleGenderProbability>0.5</maleGenderProbability>
 				<allowHumanBios>false</allowHumanBios>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>SimpleMindedAndroid</defName>
+						<chance>100</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<maleGenderProbability>2</maleGenderProbability>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
 				<immuneToAge>false</immuneToAge>
 				<disallowedTraits>
-					<li> <defName>DrugDesire</defName> </li>
-					<li> <defName>AnnoyingVoice</defName> </li>
-					<li> <defName>CreepyBreathing</defName> </li>
-					<li> <defName>Pyromaniac</defName> </li>
-					<li> <defName>Wimp</defName> </li>
-					<li> <defName>Masochist</defName> </li>
-					<li> <defName>NightOwl</defName> </li>
-					<li> <defName>Jealous</defName> </li>
-					<li> <defName>Nudist</defName> </li>
-					<li> <defName>Transhumanist</defName> </li>
-					<li> <defName>BodyPurist</defName> </li>
-					<li> <defName>Immunity</defName> </li>
-					<li> <defName>Beauty</defName> </li>
-					<li> <defName>Tough</defName> </li>
-					<li> <defName>MechAtlas</defName> </li>
+					<li><defName>DrugDesire</defName></li>
+					<li><defName>AnnoyingVoice</defName></li>
+					<li><defName>CreepyBreathing</defName></li>
+					<li><defName>Pyromaniac</defName></li>
+					<li><defName>Wimp</defName></li>
+					<li><defName>Masochist</defName></li>
+					<li><defName>NightOwl</defName></li>
+					<li><defName>Jealous</defName></li>
+					<li><defName>Nudist</defName></li>
+					<li><defName>Transhumanist</defName></li>
+					<li><defName>BodyPurist</defName></li>
+					<li><defName>Beauty</defName></li>
+					<li><defName>Immunity</defName></li>
+					<li><defName>Tough</defName></li>
+					<li><defName>MechAtlas</defName></li>
 				</disallowedTraits>
 				<notXenophobistTowards>
 					<li>Human</li>
@@ -51,11 +57,7 @@
 				<alienPartGenerator>
 					<alienbodytypes>
 						<li>Male</li>
-						<li>Female</li>
 					</alienbodytypes>
-					<aliencrowntypes>
-						<li>Average_Normal</li>
-					</aliencrowntypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -63,11 +65,31 @@
 								<options>
 									<li>
 										<weight>10</weight>
-										<only>RGBA(1,1,1,1)</only>
+										<only>RGBA(0.90,0.90,0.80,1)</only>
 									</li>
 									<li>
 										<weight>10</weight>
-										<only>RGBA(1.0,1.0,1.0,1)</only>
+										<only>RGBA(0.90,0.90,0.70,1)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(0.85,0.85,0.65,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.80,0.80,0.7,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.7,0.70,0.60,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.85,0.85,0.80,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.8,0.9,0.80,1)</only>
 									</li>
 								</options>
 							</first>
@@ -77,8 +99,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<body>Things/Misc/Androids/Models/TX2I/body/</body>
-					<head>Things/Misc/Androids/Models/TX2I/head/</head>
+					<body>Things/Droids/tier1/body/</body>
+					<head>Things/Droids/tier1/head/</head>
 				</li>
 			</graphicPaths>
 			<styleSettings>
@@ -126,8 +148,10 @@
 				<relationChanceModifierSibling>0</relationChanceModifierSibling>
 				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 			</relationSettings>
+			<compatibility>
+				<isFlesh>false</isFlesh>
+			</compatibility>
 		</alienRace>
-
 		<statBases>
 			<MarketValue>1500</MarketValue>
 			<MoveSpeed>3.10</MoveSpeed>
@@ -137,19 +161,19 @@
 			<ComfyTemperatureMax>38</ComfyTemperatureMax>
 			<PainShockThreshold>5</PainShockThreshold>
 			<ToxicSensitivity>0.25</ToxicSensitivity>
-			<WorkSpeedGlobal>0.55</WorkSpeedGlobal>
 			<MentalBreakThreshold>0.08</MentalBreakThreshold>
 			<GlobalLearningFactor>0.9</GlobalLearningFactor>
+			<WorkSpeedGlobal>0.55</WorkSpeedGlobal>
 			<ImmunityGainSpeed>10</ImmunityGainSpeed>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
-			<SocialImpact>0.6</SocialImpact>
+			<SocialImpact>0.65</SocialImpact>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 			<FoodPoisonChance>0.0</FoodPoisonChance>
 			<ButcheryFleshEfficiency>0.7</ButcheryFleshEfficiency>
 			<MedicalTendQuality>0.6</MedicalTendQuality>
-			<MedicalSurgerySuccessChance>0.8</MedicalSurgerySuccessChance>
+			<MedicalSurgerySuccessChance>0.6</MedicalSurgerySuccessChance>
 			<Mass>36.2</Mass>
 		</statBases>
 		<tools>
@@ -158,7 +182,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>7</power>
+				<power>4</power>
 				<cooldownTime>1.2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -175,7 +199,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>7</power>
+				<power>4</power>
 				<cooldownTime>1.2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -187,7 +211,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -204,18 +227,18 @@
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>100</lifeExpectancy>
+			<lifeExpectancy>200</lifeExpectancy>
 			<leatherDef>Tainted_Skin</leatherDef>
 			<nameGenerator>AndroidAtlasStandard</nameGenerator>
 			<body>Android4Tier</body>
 			<baseHealthScale>0.8</baseHealthScale>
 			<needsRest>false</needsRest>
 			<foodType>OmnivoreHuman</foodType>
-			<baseHungerRate>0.6</baseHungerRate>
+			<baseHungerRate>0.3</baseHungerRate>
 			<fleshType>AndroidTier</fleshType>
 			<bloodDef>CoolantAndroidTier</bloodDef>
 			<useMeatFrom>Alpaca</useMeatFrom>
-			<baseBodySize>0.8</baseBodySize>
+			<baseBodySize>0.5</baseBodySize>
 			<gestationPeriodDays>1</gestationPeriodDays>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<lifeStageAges>
@@ -242,8 +265,14 @@
 			<ageGenerationCurve>
 				<points>
 					<li>(0,0)</li>
-					<li>(10,100)</li>
-					<li>(2,0)</li>
+					<li>(1,100)</li>
+					<li>(2,100)</li>
+					<li>(20,15)</li>
+					<li>(50,30)</li>
+					<li>(100,50)</li>
+					<li>(150,40)</li>
+					<li>(190,15)</li>
+					<li>(200,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
@@ -251,15 +280,28 @@
 			</hediffGiverSets>
 		</race>
 		<recipes>
-		<li>ATPP_ApplyHealCPUSerum</li>
-	  <li>ATPP_ApplyHealCoolingSystem</li>
-	  <li>ATPP_ApplyHealFrameworkSystem</li>
-	  <li>ATPP_ApplyHydraulicNaniteBank</li>
-	  <li>ATPP_InstallRXChipOnAndroid</li>
-	  <li>ATPP_InstallVX0ChipOnAndroid</li>
-      <li>ATPP_InstallVX1ChipOnAndroid</li>
-	  <li>ATPP_InstallVX2ChipOnAndroid</li>
-	  <li>ATPP_InstallVX3ChipOnAndroid</li>
+			<li>ATPP_InstallT1ArtificialBrain</li>
+			<li>ATPP_ApplyHealCPUSerum</li>
+			<li>ATPP_ApplyHealCoolingSystem</li>
+			<li>ATPP_ApplyHealFrameworkSystem</li>
+			<li>ATPP_ApplyHydraulicNaniteBank</li>
+			<li>ATPP_InstallRXChipOnAndroid</li>
+			<li>ATPP_InstallVX0ChipOnAndroid</li>
+			<li>ATPP_InstallVX1ChipOnAndroid</li>
+			<li>ATPP_InstallVX2ChipOnAndroid</li>
+			<li>ATPP_InstallVX3ChipOnAndroid</li>
+			<li>ATPP_PaintAndroidFrameworkDefault</li>
+			<li>ATPP_PaintAndroidFrameworkRed</li>
+			<li>ATPP_PaintAndroidFrameworkOrange</li>
+			<li>ATPP_PaintAndroidFrameworkYellow</li>
+			<li>ATPP_PaintAndroidFrameworkKhaki</li>
+			<li>ATPP_PaintAndroidFrameworkGreen</li>
+			<li>ATPP_PaintAndroidFrameworkBlue</li>
+			<li>ATPP_PaintAndroidFrameworkCyan</li>
+			<li>ATPP_PaintAndroidFrameworkPurple</li>
+			<li>ATPP_PaintAndroidFrameworkPink</li>
+			<li>ATPP_PaintAndroidFrameworkBlack</li>
+			<li>ATPP_PaintAndroidFrameworkWhite</li>
 			<li>AdministerMechSerumHealer</li>
 			<li>InstallJoywire</li>
 			<li>InstallBasicReplacementArm</li>
@@ -272,11 +314,8 @@
 			<li>InstallLowPowerTransformer</li>
 			<li>InstallBasicDCConverter</li>
 			<li>InstallBasicPlating</li>
-			<li>InstallAdvPlating</li>
 			<li>RemoveBodyPartAndroid</li>
 			<li>ShutdownAndroid</li>
-			<li>InstallAdvancedReplacementLeg</li>
-			<li>InstallAdvancedReplacementArm</li>
 			<li>InstallFarmingMindImplant</li>
 			<li>InstallAnimalMindImplant</li>
 			<li>InstallNegotiationMindImplant</li>
@@ -290,26 +329,20 @@
 			<li>InstallMechanicMindImplant</li>
 			<li>InstallCookingMindImplant</li>
 			<li>InstallUnskilledMindImplant</li>
-			<li>InstallEvolvingMindImplant</li>
 			<li>InstallMakeshiftReplacementArm</li>
 			<li>InstallMakeshiftReplacementLeg</li>
-			<li>InstallSmellingAdvS</li>
 			<li>InstallCrudeHearingS</li>
 			<li>InstallHydraulicFrame</li>
 			<li>InstallHydraulicReplacementLeg</li>
 			<li>InstallHydraulicReplacementArm</li>
-
 			<li>ReprogramTraitsAndroidSimple</li>
 			<li>OverclockAndroid</li>
 			<li>RemoveAndroidSentience</li>
-			<li>RerollAndroidTraits</li>
-			<!--InstallPlating-->
+			<li>InstallCrudeSmellingS</li>
 		</recipes>
 		<butcherProducts>
-			<Plasteel>20</Plasteel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Chemfuel>35</Chemfuel>
-			<Cloth>65</Cloth>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="MOARANDROIDS.AndroidTweaker">
@@ -317,5 +350,44 @@
 			</li>
 		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
-
+	
+	<TraitDef>
+		<defName>SimpleMindedAndroid</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>Simple minded</label>
+				<description>Due to the limitations of this androids mind: they are only barely able to understand and feel emotion. This makes them less than desired in social situations.</description>
+				<statOffsets>
+					<SocialImpact>-0.90</SocialImpact>
+				</statOffsets>				
+				<disallowedInspirations>
+				  <li>Frenzy_Shoot</li>
+				  <li>Frenzy_Work</li>
+				  <li>Frenzy_Go</li>
+				  <li>Inspired_Trade</li>
+				  <li>Inspired_Recruitment</li>
+				  <li>Inspired_Taming</li>
+				  <li>Inspired_Surgery</li>
+				  <li>Inspired_Creativity</li>
+				</disallowedInspirations>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+	
+	<ThoughtDef>
+		<defName>MoodOffsetSimpleMindedAndroid</defName>
+		<workerClass>ThoughtWorker_AlwaysActive</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>SimpleMindedAndroid</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>Simple mind</label>
+				<description>I am Hue.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

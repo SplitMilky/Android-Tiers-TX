@@ -3,9 +3,9 @@
 
     <!-- Player faction -->
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>ATPP_AndroidTXKind</defName>
+		<defName>AndroidTXColonist</defName>
 		<label>TX Android Colonist</label>
-		<race>ATPP_AndroidTX</race>
+		<race>AndroidTX</race>
 		<backstoryFiltersOverride>
 		  <li>
 			<categories>
@@ -13,12 +13,11 @@
 			</categories>
 		  </li>
 		</backstoryFiltersOverride>
-		<maxGenerationAge>1</maxGenerationAge>
+		<maxGenerationAge>5</maxGenerationAge>
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialResistanceRange>13~21</initialResistanceRange>
-		<initialWillRange>0~0</initialWillRange>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BasePlayerPawnKind">
