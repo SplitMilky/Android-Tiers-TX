@@ -1,0 +1,43 @@
+<Defs>
+    <ResearchProjectDef>
+        <defName>TXInfiltrator</defName>
+        <label>TX Infiltrator</label>
+        <tab>AtlasAndroids</tab>
+        <description>Research and develop ways for a TX to blend in and infiltrate.</description>
+        <baseCost>345</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>T1Androids</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+        <ResearchProjectDef>
+        <defName>TXInfiltrator2</defName>
+        <label>TX Infiltrator 2</label>
+        <tab>AtlasAndroids</tab>
+        <description>Research and develop ways for a TX to blend in and infiltrate.</description>
+        <baseCost>690</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>T2Androids</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+        <ResearchProjectDef>
+        <defName>TXInfiltrator3</defName>
+        <label>TX Infiltrator 3</label>
+        <tab>AtlasAndroids</tab>
+        <description>Research and develop ways for a TX to blend in and infiltrate.</description>
+        <baseCost>1380</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>T3Androids</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+</Defs>

@@ -39,7 +39,7 @@
       <products>
          <TXAndroidGeneratorAI>1</TXAndroidGeneratorAI>
       </products>
-	  <researchPrerequisite>T1Androids</researchPrerequisite>
+	  <researchPrerequisite>TXInfiltrator</researchPrerequisite>
       <workAmount>500</workAmount>
 	  <unfinishedThingDef>UnfinishedAndroid</unfinishedThingDef>
       <workSkill>Crafting</workSkill>
