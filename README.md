@@ -1,8 +1,16 @@
 # Android Tiers TX - forked from Android Tiers TX Serie
 
-WORKS WITH SAVES - REQUIRES Android Tiers mod
+Probably works with saves.
 
-Add a new of androids designed for infiltration missions, their slightly modified exoskeleton are covered with rubber skin / living tissues which prevent them to rust, have a better social impact and to be EMP/solar flare proof, they are however more flammable.
+New combat oriented versions of androids.
+
+Roadmap
+    - Combat versions.
+    - Combat version researchables.
+    - Infiltrator combat versions.
+    - Infiltrator combat versions researchables.
+
+
 
 
 ## Contributors
