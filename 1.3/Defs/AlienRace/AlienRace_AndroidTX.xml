@@ -2,10 +2,12 @@
 <Defs>
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<!-- The folowing <defName> needs to be the same/associated with race
-		 in <PawnKindDef> -->
+		in <PawnKindDef> -->
 		<defName>AndroidTX</defName>
 		<label>TX Android</label>
-		<description>A combat oriented experimental modification to the Tier 1 android.</description>
+		<description>A combat oriented experimental modification to the Tier 1 android.
+		We basically bolted some plates on it to see what would happen.</description>
+
 		<alienRace>
 			<raceRestriction>
 				<traitList>
@@ -13,6 +15,7 @@
 					<li>FeelingsTowardHumanity</li>
 				</traitList>
 			</raceRestriction>
+
 			<generalSettings>
 				<allowHumanBios>false</allowHumanBios>
 				<forcedRaceTraitEntries>
@@ -99,8 +102,8 @@
 			</generalSettings>
 			<graphicPaths>
 				<li>
-					<body>Things/Droids/tier1/body/</body>
-					<head>Things/Droids/tier1/head/</head>
+					<body>Things/Misc/Androids/Models/TX/body/</body>
+					<head>Things/Misc/Androids/Models/TX/head/</head>
 				</li>
 			</graphicPaths>
 			<styleSettings>
@@ -352,6 +355,20 @@
 	</AlienRace.ThingDef_AlienRace>
 	
 	<TraitDef>
+		<conflictingPassions>
+			<li>Shooting</li>
+			<li>Melee</li>
+			<li>Construction</li>
+			<li>Crafting</li>
+			<li>Mining</li>
+			<li>Plants</li>
+			<li>Animals</li>
+			<li>Cooking</li>
+			<li>Artistic</li>
+			<li>Medicine</li>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</conflictingPassions>
 		<defName>SimpleMindedAndroid</defName>
 		<commonality>1</commonality>
 		<degreeDatas>
