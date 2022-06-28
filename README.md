@@ -4,15 +4,12 @@ Probably works with saves.
 
 New combat oriented versions of androids.
 
-Roadmap
-Combat versions.
-Combat version researchables.
-Infiltrator combat versions.
-Infiltrator combat versions researchables.
-
-
-
-
+Roadmap  
+  - Combat versions.  
+  - Combat version researchables.  
+  - Infiltrator combat versions.  
+  - Infiltrator combat versions researchables.  
+  
 ## Contributors
 
 * [CrackaJack](https://steamcommunity.com/profiles/76561197988202215) : TX Androids models art
