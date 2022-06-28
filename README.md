@@ -5,10 +5,10 @@ Probably works with saves.
 New combat oriented versions of androids.
 
 Roadmap
-    - Combat versions.
-    - Combat version researchables.
-    - Infiltrator combat versions.
-    - Infiltrator combat versions researchables.
+Combat versions.
+Combat version researchables.
+Infiltrator combat versions.
+Infiltrator combat versions researchables.
 
 
 
