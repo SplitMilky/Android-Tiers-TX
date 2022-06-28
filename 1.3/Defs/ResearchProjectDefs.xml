@@ -3,7 +3,7 @@
         <defName>TXInfiltrator</defName>
         <label>TX Infiltrator</label>
         <tab>AtlasAndroids</tab>
-        <description>Research and develop ways for a TX to blend in and infiltrate.</description>
+        <description>Research and develop ways for a T1 to be more combat effective.</description>
         <baseCost>345</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
