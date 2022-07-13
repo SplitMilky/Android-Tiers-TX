@@ -3,6 +3,26 @@
 
     <!-- Player faction -->
 	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<!-- The folowing <defName> needs to be the same/associated with race
+		in <AlienRace.ThingDef_AlienRace> -->
+		<defName>T1_Basic_Assault_Android</defName>
+		<label>T1 Basic Assault Android</label>
+		<race>T1_Basic_Assault_Android</race>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>AndroidTiers</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>5</maxGenerationAge>
+		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>AndroidTXColonist</defName>
 		<label>TX Android Colonist</label>
 		<race>AndroidTX</race>

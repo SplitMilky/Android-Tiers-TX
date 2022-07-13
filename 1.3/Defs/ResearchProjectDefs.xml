@@ -1,7 +1,7 @@
 <Defs>
     <ResearchProjectDef>
-        <defName>TXInfiltrator</defName>
-        <label>TX Infiltrator</label>
+        <defName>T1_Basic_Assault_Android_Research</defName>
+        <label>T1 Basic Assault Android</label>
         <tab>AtlasAndroids</tab>
         <description>Research and develop ways for a T1 to be more combat effective.</description>
         <baseCost>345</baseCost>

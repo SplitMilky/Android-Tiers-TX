@@ -2,9 +2,9 @@
 <Defs>
 	<!--<RecipeDef Abstract="true" Name="ATPP_BaseCreateTX">  -->
    <RecipeDef>
-      <defName>CreateTXAndroid</defName>
-      <label>Create TX Android</label>
-      <description>Create a TX Android.</description>
+      <defName>Create_T1_Basic_Assault_Android</defName>
+      <label>Create T1 basic assault android</label>
+      <description>Creates a T1 basic assault android.</description>
       <jobString>Making Android</jobString>  
       <allowMixingIngredients>false</allowMixingIngredients>
 	  <skillRequirements>
@@ -37,7 +37,7 @@
          </li>
       </ingredients>
       <products>
-         <TXAndroidGeneratorAI>1</TXAndroidGeneratorAI>
+         <T1BasicAssaultAndroidGeneratorAI>1</T1BasicAssaultAndroidGeneratorAI>
       </products>
 	  <researchPrerequisite>T1_Basic_Assault_Android_Research</researchPrerequisite>
       <workAmount>500</workAmount>
@@ -52,12 +52,12 @@
 	</RecipeDef>
 	
     <ThingDef ParentName="BuildingCreatorBase">
-        <defName>TXAndroidGeneratorAI</defName>
-        <label>TX Android</label>
+        <defName>T1BasicAssaultAndroidGeneratorAI</defName>
+        <label>T1 Basic Assault Android</label>
         <comps>
 		<li Class="MOARANDROIDS.SpawnerCompProperties_GenericSpawner">
             <compClass>MOARANDROIDS.CompAndroidSpawnerGeneric</compClass>
-			<Pawnkind>AndroidTXColonist</Pawnkind>
+			<Pawnkind>T1_Basic_Assault_Android</Pawnkind>
 		</li>
         </comps>
     </ThingDef>
