@@ -1,4 +1,4 @@
-# Android Tiers TX - forked from Android Tiers TX Serie
+# Android Tiers TX - forked from Android Tiers TX Series
 
 Probably works with saves.
 
